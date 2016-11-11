@@ -1,5 +1,5 @@
 ###Badrinath Thirumalachari
-# Insight Data Engineering Coding Challenge
+# Insight Data Engineering Coding Challenge Jan 2017
 
 My Solutions to [Insight Data Engineering Coding Challenge 2016](https://github.com/InsightDataScience/digital-wallet)
 
