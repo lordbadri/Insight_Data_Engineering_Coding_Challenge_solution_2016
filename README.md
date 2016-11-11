@@ -10,6 +10,7 @@ I have create a file under the `/src` dictionary called `antifraud.py`. It reads
 
 
 In particular, I converted the csv file into a pandas dataframe, cleaning and extracting the data that was required to complete the challenge. I then convert the dataframe into a python dictonary with the user id1 as the key and all the transacted users as the values under that specific key. Later I convert the dictonary to a network graph using the networkx library in python. I use this networkx object to implement the features asked in the coding challenge for the `stream_payment.csv` file provided.
+Finding the degree of seperation between the user ids was a matter of calculating the shortest path in the network graph created using the `batch_payment.csv` file between the users transacting in the `stream_payment.csv` file.
 
 ###Environment
 --------
