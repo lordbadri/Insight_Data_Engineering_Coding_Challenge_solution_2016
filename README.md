@@ -19,7 +19,7 @@ In particular, I converted the csv file into a pandas dataframe, cleaning and ex
 
 ###Usage
 --------
-To execute the code, go to the file directory and just run the command `bash run.sh`. The python program will implement all the features for the `stream_payment.csv` file into the output files as mentioned above.
+To execute the code, go to the file directory and just run the command `bash run.sh`. The python program will implement all the features for the `stream_payment.csv` file into the output files as mentioned above. Note: The code assumes that the `batch_payment.csv` and `stream_payment.csv` are avliable in the  `paymo_input` in `csv` format.
 
 ###Output details
 --------
