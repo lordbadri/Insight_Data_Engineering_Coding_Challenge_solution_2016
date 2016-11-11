@@ -24,7 +24,7 @@ csv.register_dialect(
     
 loc = r'paymo_input/batch_payment.csv'
  
-
+#data intializing and cleaning
 fileds = ['id1','id2']
 df_batch_payment = pd.read_csv(open(loc,'rU'), encoding='utf-8', engine='c',usecols=fileds,skipinitialspace=True,low_memory=False,infer_datetime_format=True,lineterminator='\n')
 first_degree_friends_for_id1 = {k: g["id2"].tolist() for k,g in df_batch_payment.groupby("id1")}
@@ -33,9 +33,10 @@ del df_batch_payment
 graph = first_degree_friends_for_id1
 del first_degree_friends_for_id1
 
+#creating a network graph to implement the features
 G = nx.Graph(graph)
 
-#path = nx.shortest_path(G,source='12',target='23')
+#extracting features as needed using the network graph
 
 with open(r'paymo_input/stream_payment.csv', 'rU') as mycsvfile:
     thedata = csv.reader(mycsvfile, dialect='mydialect')
@@ -90,4 +91,5 @@ mycsvfile.close()
 f3.close() 
 del graph  
 del G     
+#time to run
 print("--- %s seconds ---" % (time.time() - start_time))    
