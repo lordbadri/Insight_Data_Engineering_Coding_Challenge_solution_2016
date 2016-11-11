@@ -24,7 +24,7 @@ Finding the degree of seperation between the user ids was a matter of calculatin
 To execute the code, go to the file directory and just run the command `bash run.sh`. The python program will implement all the features for the `stream_payment.csv` file into the output files as mentioned above. 
 * Note1: The code assumes that the `batch_payment.csv` and `stream_payment.csv` are avliable in the  `paymo_input` in `csv` format.
 * Note2: The code currently works for pandas vesrion 0.18.1 in python. I have taken this issue into account and my shell script takes  care of this issue by changing the version of pandas on the system the script is running to the version needed to excecute the code.
-
+My program on an average takes 600 seconds to run, but it outputs all the three features into the desired output directory.
 ###Output details
 --------
 Outputs are in the required formate.
